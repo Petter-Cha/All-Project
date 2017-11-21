@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My App, Notes and tasks</string>
+
+    <string name="titulo">Notes and Tasks</string>
+    <string name="action_settings">Settings</string>
+    <string name="buscar">Type note to search</string>
+    <string name="claveL">Id</string>
+    <string name="nombreL">Name</string>
+    <string name="descripcionL">Desp</string>
+    <string name="fechaL">Date</string>
+    <string name="fotoL">Photo</string>
+    <string name="videoL">Video</string>
+    <string name="audioL">Audio</string>
+
+    <string name="nombreLisN">Notes</string>
+    <string name="nombreLisT">Tasks</string>
+
+    <string name="switext">No</string>
+    <string name="multi">Add Multemedia</string>
+    <string name="nombre">Name:</string>
+    <string name="descripcion">Description:</string>
+    <string name="fecha">Date:</string>
+    <string name="foto">Photo:</string>
+    <string name="video">Video:</string>
+    <string name="audio">Audio:</string>
+    <string name="nuevaN">New Note</string>
+    <string name="nuevaT">New Tasks</string>
+    <string name="editarN">Edit Note</string>
+    <string name="editarT">Edit Tasks</string>
+    <string name="canceelar">Cancel</string>
+    <string name="guardar">Save</string>
+    <string name="record">Remember:</string>
+
+    <string name="titleActualizar">To update</string>
+    <string name="titleBuscar">Search</string>
+    <string name="titleAcerdaDe">About..</string>
+
+</resources>

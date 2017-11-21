@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout_titulo"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lbl_titulo"
+            android:text="@string/nuevaT"
+            android:textAlignment="center"
+            android:autoText="false"
+            android:textSize="20dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="#ff995a"
+            android:textIsSelectable="false"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:id="@+id/lny_labels"
+        android:layout_below="@+id/linearLayout_titulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tvNombreT"
+            android:text="@string/nombre"
+            android:textSize="15dp"
+            android:padding="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tvDescripcionT"
+            android:text="@string/descripcion"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tvFechaT"
+            android:text="@string/fecha"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:padding="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:id="@+id/lny_texa"
+        android:layout_alignTop="@+id/lny_labels"
+        android:layout_toRightOf="@+id/lny_labels"
+        android:layout_toEndOf="@+id/lny_labels"
+        android:layout_alignBottom="@+id/lny_labels">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:id="@+id/txtNombreT"
+            android:textSize="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:id="@+id/txtDescripcionT"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:id="@+id/txtFechaT"
+            android:textSize="14dp"
+            android:editable="false"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:id="@+id/tvRecorda"
+            android:text="@string/record"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_alignRight="@+id/chkRe"
+            android:layout_alignEnd="@+id/chkRe" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/chkRe"
+            android:gravity="center"
+            android:layout_alignTop="@+id/tvRecorda"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="123dp"
+            android:layout_marginStart="123dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:id="@+id/tvAgregaMultiT"
+            android:text="@string/multi"
+            android:textSize="15dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/chkRe"
+            android:layout_toEndOf="@+id/chkRe" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:height="50dp"
+            android:textSize="14sp"
+            android:switchMinWidth="50sp"
+            android:switchPadding="50sp"
+            android:id="@+id/swMultimediaT"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="44dp"
+            android:layout_marginEnd="44dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_multimedia"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/tvfotoT"
+            android:text="@string/foto"
+            android:textSize="15dp"
+            android:padding="@dimen/activity_horizontal_margin"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/fotoL"
+            android:id="@+id/btnCaptuFotoT"
+            android:src="@android:drawable/ic_menu_camera"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvfoto"
+            android:layout_toEndOf="@+id/tvfoto"
+            android:onClick="btnCaptuFoto_click"/>
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/tvvideoT"
+            android:text="@string/video"
+            android:textSize="15dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnCaptuFoto"
+            android:layout_toEndOf="@+id/btnCaptuFoto"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/videoL"
+            android:id="@+id/btnCapVideoT"
+            android:src="@android:drawable/presence_video_busy"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvvideo"
+            android:layout_toEndOf="@+id/tvvideo"
+            android:onClick="grabar_video"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgT"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/rl_multimedia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_multimedia2"
+        android:orientation="horizontal"
+        android:layout_above="@+id/lny_botones">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/tvAudioT"
+            android:text="@string/audio"
+            android:textSize="15dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/tvfoto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/audioL"
+            android:id="@+id/btnCapAudioT"
+            android:src="@android:drawable/presence_audio_busy"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignTop="@+id/tvAudio"
+            android:layout_toRightOf="@+id/tvAudio"
+            android:layout_toEndOf="@+id/tvAudio" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnCapAudioreT"
+            android:src="@android:drawable/ic_media_play"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignTop="@+id/tvAudio"
+            android:layout_toRightOf="@+id/tvAudio"
+            android:layout_toEndOf="@+id/tvAudio" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/lny_botones"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnCancelarT"
+            android:text="@string/canceelar"
+            android:gravity="center_horizontal"
+            android:onClick="cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="#ff995a" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnGuardarT"
+            android:text="@string/guardar"
+            android:gravity="center_horizontal"
+            android:onClick="save"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="#ff995a" />
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/vvwT"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_alignBottom="@+id/imgT"
+        android:layout_toRightOf="@+id/lny_labels"
+        android:layout_toEndOf="@+id/lny_labels" />
+
+</RelativeLayout>
